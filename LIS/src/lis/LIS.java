@@ -2,12 +2,16 @@ package lis;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-//Java program to find length of longest increasing subsequence 
+/*
+ * Java program to find length of longest increasing subsequence 
+ */
 
 	class LIS { 
 		
 		public static List<Integer> lis(int[] nums) {
+			
 			if(nums == null || nums.length == 0) {
+				
 				return new ArrayList<Integer>();
 			}
 			int length = nums.length;
@@ -39,5 +43,7 @@ import java.util.List;
 				maxLengthIndex = sequence[maxLengthIndex];
 			}
 			return list;
-		}
-} 
+			
+		}// End of Main
+		
+} // End of Class LIS
